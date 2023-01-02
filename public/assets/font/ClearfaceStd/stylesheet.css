@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'ITC Clearface Std';
+    src: url('ClearfaceStd-Heavy.eot');
+    src: local('ITC Clearface Std Heavy'), local('ClearfaceStd-Heavy'),
+        url('ClearfaceStd-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('ClearfaceStd-Heavy.woff2') format('woff2'),
+        url('ClearfaceStd-Heavy.woff') format('woff'),
+        url('ClearfaceStd-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Clearface Std';
+    src: url('ClearfaceStd-Bold.eot');
+    src: local('ITC Clearface Std Bold'), local('ClearfaceStd-Bold'),
+        url('ClearfaceStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('ClearfaceStd-Bold.woff2') format('woff2'),
+        url('ClearfaceStd-Bold.woff') format('woff'),
+        url('ClearfaceStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Clearface Std';
+    src: url('ClearfaceStd-HeavyItalic.eot');
+    src: local('ITC Clearface Std Heavy Italic'), local('ClearfaceStd-HeavyItalic'),
+        url('ClearfaceStd-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('ClearfaceStd-HeavyItalic.woff2') format('woff2'),
+        url('ClearfaceStd-HeavyItalic.woff') format('woff'),
+        url('ClearfaceStd-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Clearface Std';
+    src: url('ClearfaceStd-BlackItalic.eot');
+    src: local('ITC Clearface Std Black Italic'), local('ClearfaceStd-BlackItalic'),
+        url('ClearfaceStd-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('ClearfaceStd-BlackItalic.woff2') format('woff2'),
+        url('ClearfaceStd-BlackItalic.woff') format('woff'),
+        url('ClearfaceStd-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Clearface Std';
+    src: url('ClearfaceStd-Regular.eot');
+    src: local('ITC Clearface Std'), local('ClearfaceStd-Regular'),
+        url('ClearfaceStd-Regular.eot?#iefix') format('embedded-opentype'),
+        url('ClearfaceStd-Regular.woff2') format('woff2'),
+        url('ClearfaceStd-Regular.woff') format('woff'),
+        url('ClearfaceStd-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Clearface Std';
+    src: url('ClearfaceStd-Black.eot');
+    src: local('ITC Clearface Std Black'), local('ClearfaceStd-Black'),
+        url('ClearfaceStd-Black.eot?#iefix') format('embedded-opentype'),
+        url('ClearfaceStd-Black.woff2') format('woff2'),
+        url('ClearfaceStd-Black.woff') format('woff'),
+        url('ClearfaceStd-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Clearface Std';
+    src: url('ClearfaceStd-Italic.eot');
+    src: local('ITC Clearface Std Italic'), local('ClearfaceStd-Italic'),
+        url('ClearfaceStd-Italic.eot?#iefix') format('embedded-opentype'),
+        url('ClearfaceStd-Italic.woff2') format('woff2'),
+        url('ClearfaceStd-Italic.woff') format('woff'),
+        url('ClearfaceStd-Italic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Clearface Std';
+    src: url('ClearfaceStd-BoldItalic.eot');
+    src: local('ITC Clearface Std Bold Italic'), local('ClearfaceStd-BoldItalic'),
+        url('ClearfaceStd-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('ClearfaceStd-BoldItalic.woff2') format('woff2'),
+        url('ClearfaceStd-BoldItalic.woff') format('woff'),
+        url('ClearfaceStd-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
