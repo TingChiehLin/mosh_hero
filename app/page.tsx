@@ -21,7 +21,8 @@ const data = {
 
 /* @ts-expect-error Server Component */
 const Page: FC = async () => {
-  const featureDatas = await getFeatureData();
+  //const featureDatas = await getFeatureData();
+  const featureDatas = await data;
   return (
     <>
       <HeroSection featureDatas={featureDatas} />
