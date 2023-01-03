@@ -1,8 +1,8 @@
 # MOSH - Responsive Hero App
 
-![Design preview for the Mosh mobile version](./assets/preview_1.jpg)
+![Design preview for the Mosh mobile version](./public/assets/preview_1.jpg)
 
-![Design preview for the Mosh mobile version open status](./assets/preview_2.jpg)
+![Design preview for the Mosh mobile version open status](./public/assets/preview_2.jpg)
 
 ## What skills I use
 
