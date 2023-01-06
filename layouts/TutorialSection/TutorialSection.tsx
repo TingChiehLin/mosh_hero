@@ -5,9 +5,6 @@ import localFont from "@next/font/local";
 import { ProcessCard } from "../../components/ProcessCard";
 import { Button } from "../../components/Button";
 
-import HIWImg from "../../assets/img/illustrations/HIW_Illustaration.png";
-import oneTherapyImg from "../../assets/img/illustrations/one-on-one-therapy.png";
-
 const clearfaceStdBold = localFont({
   src: "../../public/assets/font/ClearfaceStd/ClearfaceStd-Bold.ttf",
   weight: "700",
@@ -21,31 +18,48 @@ const maisonNeueBold = localFont({
 });
 
 export const TutorialSection: FC = () => {
+  const HIWImg = "/assets/img/illustrations/HIW_Illustaration.png";
+  const doctorImg = "/assets/img/illustrations/doctor_illustaration.png";
+
   return (
-    <section className="flex justify-center pt-[101px]">
-      <div className="w-[321px]">
+    <section className="w-full mx-auto xl:max-w-[1440px] flex flex-col md:flex-row flex-wrap md:flex-nowrap my-16 xl:my-[101px] px-4 md:px-8 xl:px-[7.5rem]">
+      <div className="">
         <div
-          className={`text-5xl text-dark-green ${clearfaceStdBold.variable} font-clearface-std tracking-[-0.02em] leading-[120%] mb-2`}
+          className={`text-[32px] md:text-5xl text-center xl:text-left text-dark-green ${clearfaceStdBold.variable} font-clearface-std tracking-[-0.02em] leading-[120%] mb-2`}
         >
           How it works
         </div>
         <p
-          className={`mt-2 text-[18px] ${maisonNeueBold.variable} font-maison-neue-bold text-dark-green tracking-[-0.01em] leading-[150%] mb-12`}
+          className={`mt-2 text-[18px] text-center xl:text-left ${maisonNeueBold.variable} font-maison-neue-bold text-dark-green tracking-[-0.01em] leading-[150%] mb-12`}
         >
           100% online. Convenient. Discreet.
         </p>
         <Button text="START CONSULT" />
       </div>
-      <div>
-        <ProcessCard />
+      <div className="w-full md:flex">
+        <ProcessCard
+          imgSrc={HIWImg}
+          stepTitle={"Step 1"}
+          title={"Complete questionnaire"}
+          description={
+            "A doctor will personalise your recommendation within 24 hours."
+          }
+        />
         <Image
           src={"/assets/img/icons/arrow_right.png"}
           alt={"arrow_right"}
           width="72"
           height="65"
-          className="w-full h-auto"
+          className="w-auto md:w-full h-auto mx-auto"
         />
-        <ProcessCard />
+        <ProcessCard
+          imgSrc={doctorImg}
+          stepTitle={"Step 2"}
+          title={"Free doctor consult"}
+          description={
+            "Text and video chat with a doctor to confirm the treatment plan is right for you."
+          }
+        />
       </div>
     </section>
   );

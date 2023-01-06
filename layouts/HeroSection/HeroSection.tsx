@@ -64,7 +64,7 @@ export const HeroSection: FC<HeroSectionPropType> = ({ featureDatas }) => {
             imgDesktopSrc={onlineDoctorDesktop}
             imgIpadSrc={onlineDoctorIpad}
             imgMobileSrc={onlineDoctorMobile}
-            title={"Free Online Doctor Consultation"}
+            title={"Free Doctor Consultation"}
             buttonText={"GET STARTED"}
             link={"https://www.getmosh.com.au/quizzes/mental_health_quiz"}
             infoDatas={consultation}

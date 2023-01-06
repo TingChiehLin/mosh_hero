@@ -94,7 +94,7 @@ const InfoCard: FC<InfoCardPropType> = ({
               />
             </div>
             <div
-              className={`mt-4  xl:block transition ease-out delay-400 animate-fade ${
+              className={`mt-4 xl:block transition ease-out delay-400 animate-fade ${
                 isToggle ? "block" : "hidden"
               }`}
             >
