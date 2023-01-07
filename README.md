@@ -16,10 +16,10 @@
 
 ## Colors
 
-celadon: "#DAEED9",
-light-green: "#F9F9F2",
-dark-green: "#003d3b",
-coral-pink: "#FF6340",
+- celadon: "#DAEED9"
+- light-green: "#F9F9F2"
+- dark-green: "#003d3b"
+- coral-pink: "#FF6340"
 
 ## Font
 
