@@ -47,11 +47,11 @@ export const HeroSection: FC<HeroSectionPropType> = ({ featureDatas }) => {
           id="hero_title"
           className="w-full xl:max-w-[488px] text-center xl:text-left md:mx-auto xl:mx-0 mb-6 md:mb-12 xl:mr-[20px]"
         >
-          <div
+          <h1
             className={`text-[32px] md:text-5xl text-dark-green ${clearfaceStdBold.variable} font-clearface-std tracking-[-0.02em] leading-[120%]`}
           >
             Get back on track
-          </div>
+          </h1>
           <div
             className={`mt-4 md:mt-2 text-sm md:text-[18px] ${maisonNeueLight.variable} font-maison-neue-light text-dark-green tracking-[-0.01em] leading-[150%]`}
           >

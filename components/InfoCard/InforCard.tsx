@@ -75,14 +75,14 @@ const InfoCard: FC<InfoCardPropType> = ({
               className="flex items-center justify-between gap-6 xl:gap-0 cursor-pointer xl:cursor-default"
               onClick={ToggleHandler}
             >
-              <div
+              <h4
                 className={`text-dark-green text-[18px]
                         ${maisonNeueBold.variable} font-maison-neue-bold
                         tracking-[-0.01em] leading-[150%]
                       `}
               >
                 {title}
-              </div>
+              </h4>
               <Image
                 src={arrowBottom}
                 alt={"arrow_icon"}
