@@ -50,7 +50,7 @@ export const TutorialSection: FC = () => {
           alt={"arrow_right"}
           width="72"
           height="65"
-          className="w-[72px] md:w-[72px] h-auto md:h-[65px] mx-auto"
+          className="w-[72px] mb-6 md:w-[72px] h-auto md:h-[65px] mx-auto"
         />
         <ProcessCard
           imgSrc={doctorImg}

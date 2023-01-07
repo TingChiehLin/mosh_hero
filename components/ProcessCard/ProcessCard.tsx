@@ -30,7 +30,7 @@ export const ProcessCard: FC<ProcessCardPropType> = ({
   return (
     <div
       className="w-full xl:max-w-[304px]
-                 h-[374px] my-12 md:my-0
+                 h-[374px] mb-6 md:mb-0
                  py-6 px-6
                  flex flex-col items-center
                bg-light-green rounded-xl"
