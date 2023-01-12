@@ -24,6 +24,16 @@ export interface HeroSectionPropType {
   featureDatas: FeatureDataField;
 }
 
+interface InfoCardField {
+  imgDesktopSrc: string;
+  imgIpadSrc: string;
+  imgMobileSrc: string;
+  title: string;
+  buttonText: string;
+  link: string;
+  infoDatas: string[];
+}
+
 export const HeroSection: FC<HeroSectionPropType> = ({ featureDatas }) => {
   const { consultation, therapy } = featureDatas;
 
@@ -39,6 +49,27 @@ export const HeroSection: FC<HeroSectionPropType> = ({ featureDatas }) => {
     "/assets/img/illustrations/one-on-one-therapy_ipad.png";
   const oneAndOneTherapyMobile =
     "/assets/img/illustrations/one-on-one-therapy_mobile.png";
+
+  const infoCards: InfoCardField[] = [
+    {
+      imgDesktopSrc: onlineDoctorDesktop,
+      imgIpadSrc: onlineDoctorIpad,
+      imgMobileSrc: onlineDoctorMobile,
+      title: "Free Doctor Consultation",
+      buttonText: "GET STARTED",
+      link: "https://www.getmosh.com.au/quizzes/mental_health_quiz",
+      infoDatas: consultation,
+    },
+    {
+      imgDesktopSrc: oneAndOneTherapyDesktop,
+      imgIpadSrc: oneAndOneTherapyIpad,
+      imgMobileSrc: oneAndOneTherapyMobile,
+      title: "One-on-one therapy sessions",
+      buttonText: "BOOK THERAPIST",
+      link: "https://www.getmosh.com.au/booking/mental_health",
+      infoDatas: therapy,
+    },
+  ];
 
   return (
     <section className="w-full pt-10 pb-8 md:py-12 xl:py-16 px-4 md:px-8 xl:px-0 bg-light-green flex items-center">
@@ -60,25 +91,23 @@ export const HeroSection: FC<HeroSectionPropType> = ({ featureDatas }) => {
           </div>
         </div>
         <div className="w-full flex flex-col md:flex-row xl:flex-col gap-8 md:gap-6 ">
-          <InfoCard
-            imgDesktopSrc={onlineDoctorDesktop}
-            imgIpadSrc={onlineDoctorIpad}
-            imgMobileSrc={onlineDoctorMobile}
-            title={"Free Doctor Consultation"}
-            buttonText={"GET STARTED"}
-            link={"https://www.getmosh.com.au/quizzes/mental_health_quiz"}
-            infoDatas={consultation}
-          />
-          <div className="hidden xl:mb-8"></div>
-          <InfoCard
-            imgDesktopSrc={oneAndOneTherapyDesktop}
-            imgIpadSrc={oneAndOneTherapyIpad}
-            imgMobileSrc={oneAndOneTherapyMobile}
-            title={"One-on-one therapy sessions"}
-            buttonText={"BOOK THERAPIST"}
-            link={"https://www.getmosh.com.au/booking/mental_health"}
-            infoDatas={therapy}
-          />
+          {infoCards.map((i, index) => {
+            return (
+              <>
+                <InfoCard
+                  key={i.title}
+                  imgDesktopSrc={i.imgDesktopSrc}
+                  imgIpadSrc={i.imgIpadSrc}
+                  imgMobileSrc={i.imgMobileSrc}
+                  title={i.title}
+                  buttonText={i.buttonText}
+                  link={i.link}
+                  infoDatas={i.infoDatas}
+                />
+                {index === 0 && <div className="hidden xl:mb-8"></div>}
+              </>
+            );
+          })}
         </div>
       </div>
     </section>
