@@ -9,6 +9,7 @@ import { TutorialSection } from "../layouts/TutorialSection";
 /* @ts-expect-error Server Component */
 const Page: FC = async () => {
   const featureDatas = await getFeatureData();
+  if (featureDatas.error) return "API Error show on the browser";
 
   return (
     <>

@@ -17,16 +17,16 @@ interface FeatureItemPropType {
 
 export const FeatureItem: FC<FeatureItemPropType> = ({ option, isLast }) => {
   return (
-    <div
+    <ul
       className={`flex gap-4 items-center ${!isLast ? "mb-2" : ""}
       tracking-[-0.01em] leading-[150%]`}
     >
       <Image src={featureIcon} alt={"feature_icon"} width={16} height={16} />
-      <div
+      <li
         className={`text-sm md:text-base text-dark-green ${masionNeueRegular.variable} font-maison-neue-regular`}
       >
         {option}
-      </div>
-    </div>
+      </li>
+    </ul>
   );
 };
